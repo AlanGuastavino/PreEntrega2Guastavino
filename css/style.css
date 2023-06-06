@@ -8,6 +8,8 @@ body {
     background: #030303;
 
 }
+
+@media (min-width: 1024px ) {
 .grid-container1{
     display: grid;
     text-align: center;
@@ -25,7 +27,7 @@ body {
     grid-template-columns: repeat(15 1fr);
     grid-template-rows: 100px auto auto auto auto 1fr;
 }
-
+}
 
 .header { 
     grid-area: header;
@@ -135,10 +137,6 @@ main{
     grid-area: info2;
     justify-self: center;
     align-self: center;
-
-
-
-
 }
 
 .imagen1{
