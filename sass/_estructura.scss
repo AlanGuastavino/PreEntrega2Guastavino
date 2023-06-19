@@ -1,0 +1,31 @@
+@media (min-width: 1024px ) {
+    .grid-container1{
+        display: grid;
+        text-align: center;
+        height: 100vh;
+        justify-items: stretch;
+        justify-content: space-between;
+        align-items:stretch;
+        grid-template-areas: 
+        "header header header header header header header "
+        "main main main main main main  main "
+        "info1 info1 info1 info1 info1 info1 info1"
+        "info2 info2 info2 info2 info2 info2 info2"
+        "section section section section section section section"
+        "pie pie pie pie pie pie pie ";
+        grid-template-columns: repeat(15 1fr);
+        grid-template-rows: 100px auto auto auto auto 1fr;
+            .header{
+                grid-area: header;
+                border: $colorPrincipal181B;
+                border-style: solid;
+                border-left-width: 0px;
+                border-right-width: 0px; 
+                background-color: #030303;
+                    }
+                    .logo1{
+                        width: 150px;
+                        justify-content: start;
+                        }
+                    }
+                }

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$colorDeFondo:#030303;
+$colorPrincipal: #BA181B;
+
+@import 'estructura';
+@import 'menu';
+@import 'images';
+@import 'separador-main';
+
+body {
+    background: $colorDeFondo;  
+                      
+}                                          
+
+
+
+
+
+
+

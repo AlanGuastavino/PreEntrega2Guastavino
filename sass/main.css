@@ -1,1 +1,99 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  background: #030303;
+}
+
+@media (min-width: 1024px) {
+  .grid-container1 {
+    display: grid;
+    text-align: center;
+    height: 100vh;
+    justify-items: stretch;
+    justify-content: space-between;
+    align-items: stretch;
+    grid-template-areas: "header header header header header header header " "main main main main main main  main " "info1 info1 info1 info1 info1 info1 info1" "info2 info2 info2 info2 info2 info2 info2" "section section section section section section section" "pie pie pie pie pie pie pie ";
+    grid-template-columns: repeat(15 1fr);
+    grid-template-rows: 100px auto auto auto auto 1fr;
+  }
+  .header {
+    grid-area: header;
+    border: #BA181B;
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    background-color: #030303;
+  }
+  .logo1 {
+    width: 150px;
+    justify-content: start;
+  }
+  nav .menu {
+    list-style: none;
+    background: #030303;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    justify-self: center;
+  }
+  nav .menu li {
+    display: inline-block;
+    text-align: center;
+  }
+  nav .menu li .activo {
+    background-color: #BA181B;
+  }
+  nav .menu li ul a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #f8f5f5;
+    padding: 20px;
+    display: block;
+    transition: all 0.4s;
+    justify-content: center;
+  }
+  nav .menu li ul a:hover {
+    background: #BA181B;
+  }
+}
+main {
+  grid-area: main;
+}
+main .imagen-separador {
+  justify-self: center;
+  width: 100%;
+}
+main .imagen-separador .info1 {
+  grid-area: info1;
+  background-color: #000000;
+  border-color: #BA181B;
+  border-style: solid;
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  width: 100%;
+}
+main .imagen-separador .info1 h2 {
+  color: #f8f5f5;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Karla", sans-serif;
+  align-self: center;
+  justify-self: start;
+}
+main .imagen-separador .info1 h3 {
+  color: #f8f5f5;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Karla", sans-serif;
+}
+main .imagen-separador .info1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #f8f5f5;
+}
+main .imagen-separador .info2 {
+  grid-area: info2;
+  justify-self: center;
+  align-self: center;
+}/*# sourceMappingURL=main.css.map */
