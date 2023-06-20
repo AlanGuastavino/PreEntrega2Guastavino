@@ -6,29 +6,29 @@ nav{
         align-self: center;
         width: 100%;
         justify-self: center;
-        .activo{
-            background-color:$colorPrincipal; 
-        }
+        display: flex;
                 li{
                     display: inline-block;
                     text-align: center;
                         a{
                             text-decoration: none;
                             font-family: Arial, Helvetica, sans-serif;
-                            font-size: 20px;
-                            color: #f8f5f5;
+                            font-size: 30px;
+                            color: $colorTexto;
                             padding: 20px;
                             display: block;
                             transition:all 0.4s;
                             justify-content: center; 
     
-                            a:hover{
-                                background-color: $colorPrincipal;
-                                
+                            &:hover{
+                                background-color: $colorPrincipal;   
                             }
                         }
                        
+               
+                .activo{
+                    background-color:$colorPrincipal; 
                 }
             }
         } 
-    
+    }
