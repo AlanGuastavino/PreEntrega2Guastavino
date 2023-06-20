@@ -2,7 +2,7 @@ body {
   background: #030303;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1920px) {
   .grid-container1 {
     display: grid;
     text-align: center;
