@@ -78,7 +78,6 @@ main {
   display: flex;
   justify-self: center;
   width: 100%;
-  background-image: radial-gradient(ellipse 400px 400px, rgb(2, 2, 2), rgb(14, 11, 11));
 }
 
 .pie {
