@@ -1,46 +1,12 @@
 main{
-    grid-area: main; 
-    display: inline; 
-    .imagen-separador{
-        justify-self: center;
-        width: 100%;
-    }
-    .info1{
-           div{
-            grid-area: info1;
-            background-color:#000000;
-            border-color: #BA181B;
-            border-style: solid;
-            border-bottom-width: 2px;
-            border-top-width:2px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-            width: 100%;
-            h2{
-                color: $colorTexto;
-                text-align: center;
-                font-size: 50px;
-                font-family:'Karla', sans-serif; 
-                align-self: center;
-                justify-self: start; 
-                }
-            h3{
-                color: $colorTexto;
-                text-align: center;
-                font-size: 35px;
-                font-family:'Karla', sans-serif; 
-                }
-            p{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 15px;
-                color: $colorTexto;
-                
-            }
-            }   
-        .info2{
-            grid-area: info2;
-            justify-self: center;
-            align-self: center;
-        }
-    }
+    grid-area: main;
+
+    
+}
+.imagen-separador{
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    background-image: radial-gradient(ellipse 400px 400px, rgb(2, 2, 2),  rgb(14, 11, 11));
+
 }
