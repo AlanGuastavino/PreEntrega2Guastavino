@@ -30,12 +30,12 @@ nav {
   display: flex;
   list-style: none;
   background: #030303;
+  background-image: radial-gradient(ellipse 400px 400px, rgb(24, 24, 24), rgb(0, 0, 0));
   height: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
   justify-self: stretch;
-  justify-content: center;
 }
 
 nav ul li a {
@@ -68,11 +68,17 @@ nav ul li a:hover {
 /* INDEX */
 .main {
   grid-area: main;
-  justify-self: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.imagen-separador {
+  width: 100%;
+  justify-items: stretch;
 }
 
 .imagen1 {
-  grid-area: img1;
   width: 100%;
 }
 
@@ -83,10 +89,10 @@ body {
 .grid-container1 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header header header" "menu menu menu menu menu menu" "main main main main main main" "info1 info1 info1 info1 info1 info1" "pie pie pie pie pie pie";
+  grid-template-areas: "header header header header header header" "menu menu menu menu menu menu" "main main main main main main" "info1 info1 info1 info1 info1 info1" "info2 info2 info2 info2 info2 info2" "pie pie pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 50px auto auto auto auto;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .pie {
@@ -149,4 +155,8 @@ body {
   font-size: 50px;
   font-family: "Karla", sans-serif;
   color: #f8f5f5;
+}
+
+.estadisticas {
+  grid-area: info2;
 }/*# sourceMappingURL=main.css.map */

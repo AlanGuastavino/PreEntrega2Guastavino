@@ -2,11 +2,19 @@
 
 .main{
     grid-area: main;
-    justify-self: center;
+    display: flex;
+    align-items: stretch;
+    justify-content:center;
+
+}
+
+.imagen-separador{
+    width: 100%;
+    justify-items: stretch;
+
 }
 .imagen1{
-    grid-area: img1; 
-    width: 100%;
+width: 100%;
 }
 
 

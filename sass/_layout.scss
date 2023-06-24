@@ -10,10 +10,11 @@ body {
     "menu menu menu menu menu menu"
     "main main main main main main"
     "info1 info1 info1 info1 info1 info1"
+    "info2 info2 info2 info2 info2 info2"
     "pie pie pie pie pie pie";
     row-gap: 0px;
     grid-template-rows: 50px auto auto auto auto;
-    justify-content: center;
+    justify-content: stretch;
 }
     
     
