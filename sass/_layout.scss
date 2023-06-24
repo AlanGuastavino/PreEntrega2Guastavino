@@ -1,0 +1,19 @@
+body {
+    background: #030303;
+}
+
+.grid-container1{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu menu menu menu menu menu"
+    "main main main main main main"
+    "info1 info1 info1 info1 info1 info1"
+    "pie pie pie pie pie pie";
+    row-gap: 0px;
+    grid-template-rows: 50px auto auto auto auto;
+    justify-content: center;
+}
+    
+    

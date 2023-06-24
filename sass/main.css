@@ -4,22 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #030303;
-}
-
-.grid-container1 {
-  display: grid;
-  text-align: center;
-  height: 100vh;
-  justify-items: stretch;
-  justify-content: space-between;
-  align-items: stretch;
-  grid-template-areas: "header header header header" "main main main main" "info1 info1 info1 info1" "info2 info2 info2 info2" "section section section section" "pie pie pie pie";
-  grid-template-columns: repeat(15 1fr);
-  grid-template-rows: auto auto auto auto auto;
-}
-
 .header {
   grid-area: header;
   border: #BA181B;
@@ -28,20 +12,42 @@ body {
   border-right-width: 0px;
   background-color: #030303;
   background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15), rgb(19, 5, 5));
+  justify-self: stretch;
+  display: flex;
+  justify-content: center;
 }
 
 .logo1 {
+  grid-area: log1;
   width: 150px;
-  justify-content: start;
+}
+
+nav {
+  grid-area: menu;
 }
 
 .menu {
+  display: flex;
   list-style: none;
   background: #030303;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  align-self: center;
+  justify-self: stretch;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f8f5f5;
+  padding: 20px;
+  transition: all 0.4s;
   width: 100%;
-  justify-self: center;
+  justify-items: center;
 }
 
 nav ul li {
@@ -49,35 +55,38 @@ nav ul li {
   text-align: center;
 }
 
-nav ul li a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: #f8f5f5;
-  padding: 20px;
-  display: block;
-  transition: all 0.4s;
-  justify-content: center;
-}
-
 nav ul li a:hover {
-  background: #841112;
-  background-color: #9d090b;
+  background: #430203;
+  text-shadow: 0px 0px 5px #fff;
 }
 
 .activo {
-  background-color: #9d090b;
-  background: #841112;
+  background-color: #6e0809;
+  text-shadow: 0px 0px 15px #fff;
 }
 
-main {
+/* INDEX */
+.main {
   grid-area: main;
+  justify-self: center;
 }
 
-.imagen-separador {
-  display: flex;
-  justify-self: center;
+.imagen1 {
+  grid-area: img1;
   width: 100%;
+}
+
+body {
+  background: #030303;
+}
+
+.grid-container1 {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header header header header header header" "menu menu menu menu menu menu" "main main main main main main" "info1 info1 info1 info1 info1 info1" "pie pie pie pie pie pie";
+  row-gap: 0px;
+  grid-template-rows: 50px auto auto auto auto;
+  justify-content: center;
 }
 
 .pie {
@@ -87,8 +96,6 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   color: #f8f5f5;
 }
 
@@ -103,4 +110,43 @@ main {
   width: 100%;
   font-size: 12px;
   text-align: right;
+}
+
+/* INDEX */
+.info1 {
+  grid-area: info1;
+  color: #f8f5f5;
+  font-size: 50px;
+}
+
+.titulos1 {
+  font-size: 50px;
+  color: #f8f5f5;
+}
+
+.info-personal {
+  font-size: 50px;
+  font-family: "Karla", sans-serif;
+  color: #f8f5f5;
+}
+
+.parrafo-fisico {
+  color: #f8f5f5;
+  font-size: 50px;
+  font-family: "Karla", sans-serif;
+  color: #f8f5f5;
+}
+
+.parrafo-bio {
+  color: #f8f5f5;
+  font-size: 50px;
+  font-family: "Karla", sans-serif;
+  color: #f8f5f5;
+}
+
+.parrafo-bio2 {
+  color: #f8f5f5;
+  font-size: 50px;
+  font-family: "Karla", sans-serif;
+  color: #f8f5f5;
 }/*# sourceMappingURL=main.css.map */

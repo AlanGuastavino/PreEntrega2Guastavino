@@ -1,0 +1,18 @@
+.header { 
+    grid-area: header;
+    border: #BA181B;
+    border-style: solid;
+    border-left-width: 0px;
+    border-right-width: 0px; 
+    background-color: #030303;
+    background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15),  rgb(19, 5, 5));
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+}
+
+.logo1{
+    grid-area: log1;
+    width: 150px;
+
+}

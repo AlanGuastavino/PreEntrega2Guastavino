@@ -1,53 +1,46 @@
-.header { 
-    grid-area: header;
-    border: #BA181B;
-    border-style: solid;
-    border-left-width: 0px;
-    border-right-width: 0px; 
-    background-color: #030303;
-    background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15),  rgb(19, 5, 5));
-}
 
-.logo1{
-    width: 150px;
-    justify-content: start;
-
-
+nav{
+ grid-area: menu;
 }
 
 .menu {
+    display: flex;
     list-style: none;
     background:#030303;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    align-self: center;
-    width: 100%;
-    justify-self: center;
-
+    justify-self: stretch;
+    justify-content: center;
  }
- nav ul li {
-    display: inline-block;
-    text-align: center;
-    
-}
+
 
 nav ul li a {
+    display:block;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #f8f5f5;
     padding: 20px;
-    display: block;
     transition:all .4s;
-    justify-content: center;
+    width: 100%;
+    justify-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
 }
 
 nav ul li a:hover {
-    background: #841112;
-    background-color: #9d090b;
+    background: #430203;
+    text-shadow: 0px 0px 5px #fff;
 }
 
 .activo{
-    background-color: #9d090b;
-    background: #841112;
+    background-color: #6e0809;
+    text-shadow: 0px 0px 15px #fff;
 
 }

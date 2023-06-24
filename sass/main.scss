@@ -7,10 +7,13 @@ $colorDeFondo:#030303;
 $colorPrincipal: #BA181B;
 $colorTexto:#f8f5f5;
 
-@import 'estructura';
+@import 'header';
 @import 'menu';
 @import 'separador-main';
+@import 'layout';
 @import 'footer';
+@import 'text';
+
 
 
                                       
