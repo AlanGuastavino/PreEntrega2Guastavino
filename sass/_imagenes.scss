@@ -1,22 +1,27 @@
 /* INDEX */
 
 .logo{
-    grid-area: logo;
-    width: 5%;
-    justify-self: center;
+    width: 50%;
     text-shadow: 0px 0px 5px #fff;
 
 }
-.main{
-    grid-area: main;
-    align-items: stretch;
-    justify-content: start;
+.imgprincipal{
+    grid-area: imgp;
+    display: flex;
+    justify-content: center;
+
 }
-.imagen-separador{
+.imgprincipal{
+    justify-items: center;
     width: 100%;
-
-
 }
+.main{
+    display: flex;
+    grid-area: main;
+    align-self: center;
+    justify-content: center;
+}
+
 .imagen2{
 width: 100%;
 }

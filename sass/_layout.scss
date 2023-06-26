@@ -6,15 +6,16 @@ body {
     display: grid;
     height: 100vh;
     grid-template-areas: 
-    "header header header"
-    "menu menu menu"
-    "titlogo titlogo titlogo"
-    "main main main"
-    "pp . pb"
-    "pie pie pie";
-    row-gap: 0px;
+    "header header header header"
+    "menu menu menu menu"
+    "imgp imgp imgp imgp"
+    "main main main main"
+    "pp pp pb pb"
+    "pie pie pie pie";
+    row-gap: 0px;;
     grid-template-rows: 50px auto auto auto auto;
     justify-content: stretch;
+    column-gap: 20px;
 }
     
     
