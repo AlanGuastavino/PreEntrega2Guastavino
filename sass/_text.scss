@@ -1,47 +1,51 @@
-
-/* INDEX */
-.info1{
-    grid-area: info1;
-    color: #f8f5f5;
-    font-size: 50px;
-
- }
  
 .titulos1{
-    font-size: 50px;
+    grid-area: titlogo;
+    background-color: $colorDeFondo;
+    display: flex;
+    justify-content: space-around;
     color: #f8f5f5;
+    align-self: center;
+    align-content: center;
+}
+.titulo-name{
+   font-size: 23px;
+   font-family: 'Alfa Slab One', cursive;
+   font-family: 'Biryani', sans-serif;
+   align-self: center;
+   align-items: center;
+   text-shadow: 0px 0px 5px #fff;
 }
 
-.info-personal{
-    font-size: 50px;
-    font-family:'Karla', sans-serif; 
-    color: #f8f5f5;
-
+.titulo-prof{
+    font-size: 10px;
+    align-items: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Biryani', sans-serif;
+    align-self: center;
+    justify-items: end;
+}
+/* info */
+.parrafo-pers{
+    grid-area: pp;
+    background-color:  #6e0809;
+    justify-items: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Biryani', sans-serif; 
+    font-size: 30px;
 }
 
-.parrafo-fisico{
-    color: #f8f5f5;
-    font-size: 50px;
-    font-family:'Karla', sans-serif; 
-    color: #f8f5f5;
-
-}
 
 .parrafo-bio{
+    grid-area: pb;
     color: #f8f5f5;
-    font-size: 50px;
-    font-family:'Karla', sans-serif; 
-    color: #f8f5f5;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Biryani', sans-serif; 
+    font-size: 30px;
 
 }
 
-.parrafo-bio2{
-    color: #f8f5f5;
-    font-size: 50px;
-    font-family:'Karla', sans-serif; 
-    color: #f8f5f5;
 
-}
-.estadisticas{
+.info2{
     grid-area: info2;
 }

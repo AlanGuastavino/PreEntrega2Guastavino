@@ -6,12 +6,12 @@ body {
     display: grid;
     height: 100vh;
     grid-template-areas: 
-    "header header header header header header"
-    "menu menu menu menu menu menu"
-    "main main main main main main"
-    "info1 info1 info1 info1 info1 info1"
-    "info2 info2 info2 info2 info2 info2"
-    "pie pie pie pie pie pie";
+    "header header header"
+    "menu menu menu"
+    "titlogo titlogo titlogo"
+    "main main main"
+    "pp . pb"
+    "pie pie pie";
     row-gap: 0px;
     grid-template-rows: 50px auto auto auto auto;
     justify-content: stretch;

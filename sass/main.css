@@ -66,19 +66,24 @@ nav ul li a:hover {
 }
 
 /* INDEX */
+.logo {
+  grid-area: logo;
+  width: 5%;
+  justify-self: center;
+  text-shadow: 0px 0px 5px #fff;
+}
+
 .main {
   grid-area: main;
-  display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: start;
 }
 
 .imagen-separador {
   width: 100%;
-  justify-items: stretch;
 }
 
-.imagen1 {
+.imagen2 {
   width: 100%;
 }
 
@@ -89,7 +94,7 @@ body {
 .grid-container1 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header header header" "menu menu menu menu menu menu" "main main main main main main" "info1 info1 info1 info1 info1 info1" "info2 info2 info2 info2 info2 info2" "pie pie pie pie pie pie";
+  grid-template-areas: "header header header" "menu menu menu" "titlogo titlogo titlogo" "main main main" "pp . pb" "pie pie pie";
   row-gap: 0px;
   grid-template-rows: 50px auto auto auto auto;
   justify-content: stretch;
@@ -118,45 +123,52 @@ body {
   text-align: right;
 }
 
-/* INDEX */
-.info1 {
-  grid-area: info1;
-  color: #f8f5f5;
-  font-size: 50px;
-}
-
 .titulos1 {
-  font-size: 50px;
+  grid-area: titlogo;
+  background-color: #030303;
+  display: flex;
+  justify-content: space-around;
   color: #f8f5f5;
+  align-self: center;
+  align-content: center;
 }
 
-.info-personal {
-  font-size: 50px;
-  font-family: "Karla", sans-serif;
-  color: #f8f5f5;
+.titulo-name {
+  font-size: 23px;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Biryani", sans-serif;
+  align-self: center;
+  align-items: center;
+  text-shadow: 0px 0px 5px #fff;
 }
 
-.parrafo-fisico {
-  color: #f8f5f5;
-  font-size: 50px;
-  font-family: "Karla", sans-serif;
-  color: #f8f5f5;
+.titulo-prof {
+  font-size: 10px;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Biryani", sans-serif;
+  align-self: center;
+  justify-items: end;
+}
+
+/* info */
+.parrafo-pers {
+  grid-area: pp;
+  background-color: #6e0809;
+  justify-items: center;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Biryani", sans-serif;
+  font-size: 30px;
 }
 
 .parrafo-bio {
+  grid-area: pb;
   color: #f8f5f5;
-  font-size: 50px;
-  font-family: "Karla", sans-serif;
-  color: #f8f5f5;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Biryani", sans-serif;
+  font-size: 30px;
 }
 
-.parrafo-bio2 {
-  color: #f8f5f5;
-  font-size: 50px;
-  font-family: "Karla", sans-serif;
-  color: #f8f5f5;
-}
-
-.estadisticas {
+.info2 {
   grid-area: info2;
 }/*# sourceMappingURL=main.css.map */
