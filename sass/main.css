@@ -67,26 +67,20 @@ nav ul li a:hover {
 
 /* INDEX */
 .logo {
-  width: 50%;
+  width: 20%;
   text-shadow: 0px 0px 5px #fff;
-}
-
-.imgprincipal {
-  grid-area: imgp;
-  display: flex;
-  justify-content: center;
 }
 
 .imgprincipal {
   justify-items: center;
   width: 100%;
+  grid-area: imgp;
 }
 
-.main {
-  display: flex;
-  grid-area: main;
-  align-self: center;
-  justify-content: center;
+.imgprincipal2 {
+  justify-items: center;
+  width: 100%;
+  grid-area: imgp2;
 }
 
 .imagen2 {
@@ -100,20 +94,46 @@ body {
 .grid-container1 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "menu menu menu menu" "imgp imgp imgp imgp" "main main main main" "pp pp pb pb" "pie pie pie pie";
+  grid-template-areas: "header header header header" "menu menu menu menu" "imgp imgp imgp imgp" "main main main main" "tit1 tit1 tit1 tit1" "pp pp pb pb" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 50px auto auto auto auto;
+  grid-template-rows: 50px 62, 5px auto auto auto;
+  grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
 
-.pie {
+.grid-container2 {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header header header header" "menu menu menu menu" "imgp2 imgp2 main-e main-e " "pie pie pie pie";
+  row-gap: 0px;
+  grid-template-rows: 50px 62, 5px auto auto auto;
+  grid-template-columns: repeat(4, 2fr);
+  justify-content: stretch;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.main-index {
+  display: flex;
+  grid-area: main;
+  align-self: center;
+  justify-content: center;
+}
+
+.main-est {
+  display: flex;
+  grid-area: main-e;
+  align-self: center;
+  justify-content: center;
+}
+
+.box-pie {
   grid-area: pie;
   margin: 0px;
   background-color: #0B090A;
   width: 100%;
-  height: 100%;
   display: flex;
   color: #f8f5f5;
 }
@@ -132,6 +152,7 @@ body {
 }
 
 .titulos1 {
+  grid-area: tit1;
   background-color: #030303;
   color: #f8f5f5;
   justify-self: center;
@@ -139,39 +160,69 @@ body {
 }
 
 .titulo-name {
-  grid-area: tn;
-  font-size: 45px;
+  font-size: 50px;
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
   text-shadow: 0px 0px 5px #fff;
 }
 
 .titulo-prof {
-  grid-area: tp;
-  font-size: 30px;
+  font-size: 35px;
   align-items: center;
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
-  align-self: center;
-  justify-self: center;
+  justify-items: center;
 }
 
 /* info */
-.parrafo-pers {
+.parrafo-box-pers {
   grid-area: pp;
-  background-color: #6e0809;
-  justify-items: center;
+  display: flex;
+  background-image: radial-gradient(ellipse 400px 400px, rgba(108, 15, 15, 0.837), rgb(19, 5, 5));
+  color: #f8f5f5;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.parrafo-pers {
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-justify: center;
+  text-align: center;
+}
+
+.parrafo-box-bio {
+  grid-area: pb;
+  display: flex;
+  margin: 30px;
+  color: #f8f5f5;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .parrafo-bio {
-  grid-area: pb;
-  color: #f8f5f5;
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
   font-size: 20px;
+  justify-items: center;
+  align-items: center;
+  text-justify: center;
+  text-align: justify;
+}
+
+.estadisticas {
+  display: flex;
+  margin: 30px;
+  color: #f8f5f5;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .info2 {

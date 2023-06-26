@@ -1,47 +1,75 @@
  
 .titulos1{
+    grid-area: tit1;
     background-color: $colorDeFondo;
     color: #f8f5f5;
     justify-self: center;
     align-self: center;
 
-
 }
 .titulo-name{
-   grid-area: tn;
-    font-size: 45px;
+    font-size: 50px;
    font-family: 'Alfa Slab One', cursive;
    font-family: 'Biryani', sans-serif;
    text-shadow: 0px 0px 5px #fff;
+
 }
 
 .titulo-prof{
-    grid-area: tp;
-    font-size: 30px;
+    font-size: 35px;
     align-items: center;
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Biryani', sans-serif;
-    align-self: center;
-    justify-self: center;
+    justify-items: center;
 }
 /* info */
-.parrafo-pers{
+
+.parrafo-box-pers{
     grid-area: pp;
-    background-color:  #6e0809;
-    justify-items: center;
+    display: flex;
+    background-image: radial-gradient(ellipse 400px 400px, rgba(108, 15, 15, 0.837),  rgb(19, 5, 5));
+    color: #f8f5f5;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+.parrafo-pers{
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Biryani', sans-serif; 
-    font-size: 30px;
+    font-size: 40px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-justify: center;
+    text-align: center;
 }
 
-
-.parrafo-bio{
+.parrafo-box-bio{
     grid-area: pb;
+    display: flex;
+    margin: 30px;
     color: #f8f5f5;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.parrafo-bio{
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Biryani', sans-serif; 
     font-size: 20px;
-
+    justify-items: center;
+    align-items: center;
+    text-justify: center;
+    text-align:justify;
+}
+.estadisticas{
+    display: flex;
+    margin: 30px;
+    color: #f8f5f5;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 

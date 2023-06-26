@@ -10,12 +10,27 @@ body {
     "menu menu menu menu"
     "imgp imgp imgp imgp"
     "main main main main"
+    "tit1 tit1 tit1 tit1"
     "pp pp pb pb"
     "pie pie pie pie";
-    row-gap: 0px;;
-    grid-template-rows: 50px auto auto auto auto;
+    row-gap: 0px;
+    grid-template-rows: 50px 62,5px auto auto auto;
+    grid-template-columns: repeat(4, 2fr);
     justify-content: stretch;
     column-gap: 20px;
 }
     
-    
+.grid-container2{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header"
+    "menu menu menu menu"
+    "imgp2 imgp2 main-e main-e "
+    "pie pie pie pie";
+    row-gap: 0px;
+    grid-template-rows: 50px 62,5px auto auto auto;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: stretch;
+    column-gap: 20px;    
+}
