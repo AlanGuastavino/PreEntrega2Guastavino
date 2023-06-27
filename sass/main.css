@@ -96,7 +96,7 @@ body {
   height: 100vh;
   grid-template-areas: "header header header header" "menu menu menu menu" "imgp imgp imgp imgp" "main main main main" "tit1 tit1 tit1 tit1" "pp pp pb pb" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 50px 62, 5px auto auto auto;
+  grid-template-rows: 50px 62, 5px auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   -moz-column-gap: 20px;
@@ -129,26 +129,8 @@ body {
   justify-content: center;
 }
 
-.box-pie {
+.footer {
   grid-area: pie;
-  margin: 0px;
-  background-color: #0B090A;
-  width: 100%;
-  display: flex;
-  color: #f8f5f5;
-}
-
-.pie p {
-  width: 100%;
-  color: #f8f5f5;
-  font-size: 10px;
-  text-align: left;
-}
-
-.pie .small {
-  width: 100%;
-  font-size: 12px;
-  text-align: right;
 }
 
 .titulos1 {
@@ -180,30 +162,31 @@ body {
   display: flex;
   background-image: radial-gradient(ellipse 400px 400px, rgba(108, 15, 15, 0.837), rgb(19, 5, 5));
   color: #f8f5f5;
-  align-content: center;
   justify-content: center;
   margin: 10px;
+  padding: 10px;
 }
 
 .parrafo-pers {
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
   font-size: 40px;
-  align-content: center;
   justify-items: center;
   align-items: center;
   text-justify: center;
   text-align: center;
+  background-size: cover;
 }
 
 .parrafo-box-bio {
   grid-area: pb;
   display: flex;
-  margin: 30px;
+  margin: 10px;
+  padding: 10px;
   color: #f8f5f5;
   align-content: center;
   justify-content: center;
-  text-align: center;
+  background-color: rgb(48, 47, 47);
 }
 
 .parrafo-bio {

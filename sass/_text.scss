@@ -6,6 +6,7 @@
     justify-self: center;
     align-self: center;
 
+
 }
 .titulo-name{
     font-size: 50px;
@@ -29,32 +30,36 @@
     display: flex;
     background-image: radial-gradient(ellipse 400px 400px, rgba(108, 15, 15, 0.837),  rgb(19, 5, 5));
     color: #f8f5f5;
-    align-content: center;
     justify-content: center;
     margin: 10px;
+    padding: 10px;
 
 }
 .parrafo-pers{
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Biryani', sans-serif; 
     font-size: 40px;
-    align-content: center;
     justify-items: center;
     align-items: center;
     text-justify: center;
     text-align: center;
+    background-size: cover;
+
 }
 
 .parrafo-box-bio{
     grid-area: pb;
     display: flex;
-    margin: 30px;
+    margin: 10px;
+    padding: 10px;
     color: #f8f5f5;
     align-content: center;
     justify-content: center;
-    text-align: center;
+    background-color:rgb(48, 47, 47);
+
 }
 .parrafo-bio{
+
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Biryani', sans-serif; 
     font-size: 20px;
@@ -62,6 +67,8 @@
     align-items: center;
     text-justify: center;
     text-align:justify;
+
+
 }
 .estadisticas{
     display: flex;
