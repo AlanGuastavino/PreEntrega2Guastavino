@@ -1,22 +1,37 @@
 .main-index{
     grid-area: main;
+    height: 100vh;
+    width: 100%;
     background-image: url(../images/foto1.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: end;
+  /*   background-attachment: fixed;  */
     display: flex;
-    padding: 0px;
-    justify-content: stretch;
-    height: 100vh;
-    margin-top: 0px;
+   align-items:stretch;
+   justify-items: stretch;
+   align-content: center;
+
+   
 
 
 
 }
 .main-est{
+    grid-area: main2;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/foto2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: end;
     display: flex;
-    grid-area: main-e;
-    align-self: center;
-    justify-content: center;
+   align-items:stretch;
+   justify-content: space-around;
+   align-content: end;
+
+   
+
+
+
 }

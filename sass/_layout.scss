@@ -4,30 +4,30 @@ body {
     .grid-container1{
         display: grid;
        height: 100vh;
-       
         grid-template-areas: 
         "header header header header"
         "main main main main"
-        "pp pp pb pb"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows:85px auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
+        align-content: stretch;
         column-gap: 20px;
     }
         
     .grid-container2{
         display: grid;
-        height: 100vh;
+       height: 100vh;
         grid-template-areas: 
         "header header header header"
-        "menu menu menu menu"
-        "imgp2 imgp2 main-e main-e "
+        "main2 main2 main2 main2"
+        "pp pp pb pb"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows: 50px 70px auto auto auto auto auto;
+        grid-template-rows:0px auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
-        column-gap: 20px;    
+        align-content: stretch;
+        column-gap: 20px;
     }

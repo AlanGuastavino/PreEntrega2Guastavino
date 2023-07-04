@@ -1,28 +1,17 @@
 .header { 
-    /* background-color: #030303;
-    background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15),  rgb(19, 5, 5)) */
 position: fixed;
 width: 100%;
-background-color: #05050597;
+background-color: rgba(0, 0, 0, 0.826);
 display: flex;
 justify-content: space-around;
-padding: 30px 20px;
 align-content: center;
 }
 
-.logo1{
-    grid-area: log1;
-    width: 200px;
-
-
-}
 nav{
     grid-area: menu;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+    justify-content: start;
+    align-content: center;
    }
    
    .menu {
@@ -43,11 +32,11 @@ nav{
     display: block;   
     text-decoration: none;
        font-family: Arial, Helvetica, sans-serif;
-       font-size: 25px;
+       font-size: 20px;
        color: #f8f5f5;
        padding: 20px;
        transition:all .4s;
-       justify-items: center;
+
    }
    
    nav ul li {
