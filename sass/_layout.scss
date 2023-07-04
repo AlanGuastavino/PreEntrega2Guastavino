@@ -9,7 +9,7 @@ body {
         "main main main main"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:85px auto auto auto auto auto auto;
+        grid-template-rows:0px auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
         align-content: stretch;
@@ -17,6 +17,54 @@ body {
     }
         
     .grid-container2{
+        display: grid;
+       height: 100vh;
+        grid-template-areas: 
+        "header header header header"
+        "main2 main2 main2 main2"
+        "pp pp pb pb"
+        "pie pie pie pie";
+        row-gap: 0px;
+        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-columns: repeat(4, 2fr);
+        justify-content: stretch;
+        align-content: stretch;
+        column-gap: 20px;
+    }
+
+    .grid-container3{
+        display: grid;
+       height: 100vh;
+        grid-template-areas: 
+        "header header header header"
+        "main2 main2 main2 main2"
+        "pp pp pb pb"
+        "pie pie pie pie";
+        row-gap: 0px;
+        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-columns: repeat(4, 2fr);
+        justify-content: stretch;
+        align-content: stretch;
+        column-gap: 20px;
+    }
+
+    .grid-container4{
+        display: grid;
+       height: 100vh;
+        grid-template-areas: 
+        "header header header header"
+        "main2 main2 main2 main2"
+        "pp pp pb pb"
+        "pie pie pie pie";
+        row-gap: 0px;
+        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-columns: repeat(4, 2fr);
+        justify-content: stretch;
+        align-content: stretch;
+        column-gap: 20px;
+    }
+
+    .grid-container5{
         display: grid;
        height: 100vh;
         grid-template-areas: 
