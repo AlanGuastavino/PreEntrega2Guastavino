@@ -5,76 +5,73 @@
 }
 
 .header {
-  grid-area: header;
-  border: #BA181B;
-  border-style: solid;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  background-color: #030303;
-  background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15), rgb(19, 5, 5));
-  justify-self: stretch;
+  /* background-color: #030303;
+  background-image: radial-gradient(ellipse 400px 400px, rgb(108, 15, 15),  rgb(19, 5, 5)) */
+  position: fixed;
+  width: 100%;
+  background-color: rgba(5, 5, 5, 0.5921568627);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  align-content: center;
 }
 
 .logo1 {
   grid-area: log1;
-  width: 150px;
+  width: 200px;
 }
 
 nav {
   grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
-  display: flex;
+  position: relative;
   list-style: none;
-  background: #030303;
-  background-image: radial-gradient(ellipse 400px 400px, rgb(24, 24, 24), rgb(0, 0, 0));
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   justify-self: stretch;
+  width: 100%;
 }
 
 nav ul li a {
   display: block;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: #f8f5f5;
   padding: 20px;
   transition: all 0.4s;
-  width: 100%;
   justify-items: center;
 }
 
 nav ul li {
-  display: inline-block;
   text-align: center;
 }
 
 nav ul li a:hover {
-  background: #430203;
+  display: inline-block;
+  background: #430203 50px;
   text-shadow: 0px 0px 5px #fff;
 }
 
 .activo {
+  display: inline-block;
   background-color: #6e0809;
   text-shadow: 0px 0px 15px #fff;
 }
 
 /* INDEX */
 .logo {
+  text-shadow: 0px 0px 50px #fff;
   width: 20%;
-  text-shadow: 0px 0px 5px #fff;
-}
-
-.imgprincipal {
   justify-items: center;
-  width: 100%;
-  grid-area: imgp;
 }
 
 .imgprincipal2 {
@@ -94,9 +91,9 @@ body {
 .grid-container1 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "menu menu menu menu" "imgp imgp imgp imgp" "main main main main" "tit1 tit1 tit1 tit1" "pp pp pb pb" "pie pie pie pie";
+  grid-template-areas: "header header header header" "main main main main" "pp pp pb pb" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 50px 62, 5px auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   -moz-column-gap: 20px;
@@ -108,7 +105,7 @@ body {
   height: 100vh;
   grid-template-areas: "header header header header" "menu menu menu menu" "imgp2 imgp2 main-e main-e " "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 50px 62, 5px auto auto auto;
+  grid-template-rows: 50px 70px auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   -moz-column-gap: 20px;
@@ -116,10 +113,17 @@ body {
 }
 
 .main-index {
-  display: flex;
   grid-area: main;
-  align-self: center;
-  justify-content: center;
+  background-image: url(../images/foto1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  padding: 0px;
+  justify-content: stretch;
+  height: 100vh;
+  margin-top: 0px;
 }
 
 .main-est {
@@ -134,26 +138,28 @@ body {
 }
 
 .titulos1 {
-  grid-area: tit1;
-  background-color: #030303;
+  background-color: none;
   color: #f8f5f5;
+  align-items: center;
   justify-self: center;
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 .titulo-name {
   font-size: 50px;
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
-  text-shadow: 0px 0px 5px #fff;
+  text-shadow: 0px 0px 5px #020202;
+  text-align: center;
 }
 
 .titulo-prof {
-  font-size: 35px;
-  align-items: center;
+  font-size: 50px;
   font-family: "Alfa Slab One", cursive;
   font-family: "Biryani", sans-serif;
-  justify-items: center;
+  text-align: center;
+  text-shadow: 0px 0px 5px #020202;
 }
 
 /* info */
@@ -210,4 +216,41 @@ body {
 
 .info2 {
   grid-area: info2;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* 
+ $breakpoints: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1280px,
+ );
+
+ @mixin media-up($breakpoint){
+    @if map-has-key($breakpoints , $breakpoint: ){
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+            @content;
+    }
+
+ }@else{
+
+ }
+
+    }
+
+@include media-up(sm){
+
+}
+@include media-up(md){
+
+}
+@include media-up(lg){
+
+}
+@include media-up(xl){
+
+}
+
+
+
+ *//*# sourceMappingURL=main.css.map */

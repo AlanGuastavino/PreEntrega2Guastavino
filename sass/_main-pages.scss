@@ -1,8 +1,17 @@
 .main-index{
-    display: flex;
     grid-area: main;
-    align-self: center;
-    justify-content: center;
+    background-image: url(../images/foto1.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    padding: 0px;
+    justify-content: stretch;
+    height: 100vh;
+    margin-top: 0px;
+
+
 
 }
 .main-est{

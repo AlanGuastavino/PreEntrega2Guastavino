@@ -8,7 +8,6 @@ $colorPrincipal: #BA181B;
 $colorTexto:#f8f5f5;
 
 @import 'header';
-@import 'menu';
 @import 'imagenes';
 @import 'layout';
 @import 'main-pages';
@@ -16,12 +15,39 @@ $colorTexto:#f8f5f5;
 @import 'text';
 
 
+/* 
+ $breakpoints: (
+    sm : 540px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1280px,
+ );
 
-                                      
+ @mixin media-up($breakpoint){
+    @if map-has-key($breakpoints , $breakpoint: ){
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+            @content;
+    }
+
+ }@else{
+    
+ }
+
+    }
+
+@include media-up(sm){
+
+}
+@include media-up(md){
+    
+}
+@include media-up(lg){
+    
+}
+@include media-up(xl){
+    
+}
 
 
 
-
-
-
-
+ */
