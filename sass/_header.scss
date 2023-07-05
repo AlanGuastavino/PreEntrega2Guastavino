@@ -1,59 +1,55 @@
 .header { 
-position: fixed;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.826);
-display: flex;
-justify-content: space-around;
-align-content: center;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.826);
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
 }
 
 nav{
-    grid-area: menu;
-    display: flex;
-    justify-content: start;
-    align-content: center;
+        grid-area: menu;
+        display: flex;
+        justify-content: start;
+        align-content: center;
    }
    
    .menu {
-    position: relative;   
-    list-style: none;
-    height: 100%;
-      display: flex;
-       align-items: center;
-       justify-content: center;
-       text-align: center;
-       justify-self: stretch;
-       width: 100%;
-   
+        position: relative;   
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-self: stretch;
+        width: 100%;
     }
    
    
    nav ul li a {
-    display: block;   
-    text-decoration: none;
-       font-family: Arial, Helvetica, sans-serif;
-       font-size: 20px;
-       color: #f8f5f5;
-       padding: 20px;
-       transition:all .4s;
-
+        display: block;   
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: #f8f5f5;
+        padding: 20px;
+        transition:all .4s;
    }
    
    nav ul li {
-
-       text-align: center;
+        text-align: center;
    }
    
    nav ul li a:hover {
-    display: inline-block;
-       background: #430203 50px;
-
-       text-shadow: 0px 0px 5px #fff;
+        display: inline-block;
+        background: #430203 50px;
+        text-shadow: 0px 0px 5px #fff;
    }
    
    .activo{
-    display: inline-block;
-       background-color: #6e0809 ;
-       text-shadow: 0px 0px 15px #fff;
+        display: inline-block;
+        background-color: #6e0809 ;
+        text-shadow: 0px 0px 15px #fff;
    
    }
