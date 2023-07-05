@@ -84,7 +84,18 @@ nav ul li a:hover {
 }
 
 .whatsapp {
-  width: 80px;
+  width: 90px;
+}
+
+.imagensep1 {
+  grid-area: imgs1;
+  width: 100%;
+}
+
+.img-fluid {
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -146,11 +157,11 @@ body {
 .grid-container5 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main5 main5 main5 main5" "pie pie pie pie";
+  grid-template-areas: "header header header header" "main5 main5 main5 main5" "form form form form" "pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 0px auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
-  justify-content: stretch;
+  justify-content: space-around;
   align-content: stretch;
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -171,7 +182,7 @@ body {
   align-content: center;
 }
 
-.main-est {
+.main2 {
   grid-area: main2;
   height: 100vh;
   width: 100%;
@@ -182,6 +193,44 @@ body {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
+  align-content: end;
+}
+
+.main3 {
+  grid-area: main3;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  align-content: end;
+}
+
+.main4 {
+  grid-area: main4;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/foto2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: end;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  align-content: end;
+}
+
+.main5 {
+  grid-area: main5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
   align-content: end;
 }
 
@@ -265,6 +314,15 @@ footer {
   text-justify: center;
   text-align: center;
   flex-wrap: nowrap;
+}
+
+.formulario {
+  display: flex;
+  grid-area: form;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 

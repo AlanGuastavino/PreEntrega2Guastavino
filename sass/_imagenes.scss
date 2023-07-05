@@ -25,6 +25,17 @@
 }
 
 .whatsapp{
-    width: 80px;
+    width: 90px;
 }
 
+.imagensep1{
+    grid-area: imgs1;
+    width: 100%;
+}
+
+.img-fluid{
+    width: 20%;
+    display: flex;
+    justify-content:center;
+
+}

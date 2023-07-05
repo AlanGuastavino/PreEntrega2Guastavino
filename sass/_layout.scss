@@ -68,11 +68,12 @@ body {
         grid-template-areas: 
         "header header header header"
         "main5 main5 main5 main5"
+        "form form form form"
         "pie pie pie pie";
         row-gap: 0px;
         grid-template-rows:0px auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
-        justify-content: stretch;
+        justify-content: space-around;
         align-content: stretch;
         column-gap: 20px;
     }
