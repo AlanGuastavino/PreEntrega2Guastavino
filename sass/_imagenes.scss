@@ -40,3 +40,68 @@
 
 }
 
+.box-galeria{
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin: 30px 20px 20px 20px;
+   
+}
+
+.box-galeria2{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.box-galeria3{
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 20px;
+}
+
+.img-pelea1{
+    width: 30%;
+    border-style: solid;
+    border-color: #f9f7f7;
+    border-width: 4px;
+}
+
+.img-pelea2{
+width: 30%;
+border-style: solid;
+border-color:#f9f7f7;
+border-width: 4px;
+}
+
+.img-pelea3{
+width: 100%;
+border-style: solid;
+border-color: #f9f7f7;
+border-width: 4px;
+}
+.img-pelea4{
+    width: 30%;
+    border-style: solid;
+    border-color: #f3efef;
+    border-width: 4px;
+}
+
+.img-pelea5{
+width: 40%;
+border-style: solid;
+border-color: #f9f7f7;
+border-width: 4px;
+}
+
+.img-pelea6{
+width: 50%;
+border-style: solid;
+border-color: #f9f7f7;
+border-width: 4px;
+}

@@ -98,6 +98,72 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+.box-galeria {
+  justify-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  margin: 30px 20px 20px 20px;
+}
+
+.box-galeria2 {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.box-galeria3 {
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 20px;
+}
+
+.img-pelea1 {
+  width: 30%;
+  border-style: solid;
+  border-color: #f9f7f7;
+  border-width: 4px;
+}
+
+.img-pelea2 {
+  width: 30%;
+  border-style: solid;
+  border-color: #f9f7f7;
+  border-width: 4px;
+}
+
+.img-pelea3 {
+  width: 100%;
+  border-style: solid;
+  border-color: #f9f7f7;
+  border-width: 4px;
+}
+
+.img-pelea4 {
+  width: 30%;
+  border-style: solid;
+  border-color: #f3efef;
+  border-width: 4px;
+}
+
+.img-pelea5 {
+  width: 40%;
+  border-style: solid;
+  border-color: #f9f7f7;
+  border-width: 4px;
+}
+
+.img-pelea6 {
+  width: 50%;
+  border-style: solid;
+  border-color: #f9f7f7;
+  border-width: 4px;
+}
+
 body {
   background: #030303;
 }
@@ -120,7 +186,7 @@ body {
   height: 100vh;
   grid-template-areas: "menu menu menu menu" "main2 main2 main2 main2" "pp pp pb pb" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 0px auto auto auto auto auto auto;
+  grid-template-rows: 90px auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   align-content: stretch;
@@ -144,11 +210,12 @@ body {
 .grid-container4 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "menu menu menu menu" "main4 main4 main4 main4" "pie pie pie pie";
+  width: 100%;
+  grid-template-areas: "menu menu menu menu" "main4 main4 main4 main4" "boxg1 boxg1 boxg1 boxg1" "boxg2 boxg2 boxg2 boxg2" "pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 90px auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
-  justify-content: stretch;
+  justify-content: center;
   align-content: stretch;
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -212,17 +279,14 @@ body {
 
 .main4 {
   grid-area: main4;
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/foto3-bb.jpg);
+  background-image: url(../images/hexa_dan_wave_10.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  align-content: end;
   display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  align-content: end;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
 }
 
 .main5 {

@@ -25,6 +25,7 @@
    align-items:stretch;
    justify-content: space-around;
    align-content: end;
+
 }
 
 .main3{
@@ -43,17 +44,15 @@
 
 .main4{
   grid-area: main4;
-  height: 100vh;
-  width: 100%;
-background-image: url(../images/foto3-bb.jpg);
+background-image: url(../images/hexa_dan_wave_10.jpg);
 background-size: cover;
 background-position: center;
     background-repeat: no-repeat;
-align-content: end;
 display: flex;
-align-items:stretch;
-justify-content: space-around;
-align-content: end;
+justify-content: center;
+align-items: end;
+flex-wrap: wrap;
+
 
 }
 
