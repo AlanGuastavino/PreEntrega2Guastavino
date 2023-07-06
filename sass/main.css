@@ -5,6 +5,7 @@
 }
 
 .header {
+  grid-area: menu;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.826);
@@ -14,7 +15,6 @@
 }
 
 nav {
-  grid-area: menu;
   display: flex;
   justify-content: start;
   align-content: center;
@@ -105,9 +105,9 @@ body {
 .grid-container1 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main main main main" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main main main main" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 0px auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   align-content: stretch;
@@ -118,7 +118,7 @@ body {
 .grid-container2 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main2 main2 main2 main2" "pp pp pb pb" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main2 main2 main2 main2" "pp pp pb pb" "pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 0px auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
@@ -131,7 +131,7 @@ body {
 .grid-container3 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main3 main3 main3 main3" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main3 main3 main3 main3" "pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 0px auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
@@ -144,9 +144,9 @@ body {
 .grid-container4 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main4 main4 main4 main4" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main4 main4 main4 main4" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 0px auto auto auto auto auto auto;
+  grid-template-rows: 90px auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: stretch;
   align-content: stretch;
@@ -157,9 +157,9 @@ body {
 .grid-container5 {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header header header header" "main5 main5 main5 main5" "form form form form" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main5 main5 main5 main5" "form form form form" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 0px auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
   justify-content: space-around;
   align-content: stretch;
@@ -200,7 +200,7 @@ body {
   grid-area: main3;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: #030303;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,10 +214,11 @@ body {
   grid-area: main4;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/foto2.jpg);
+  background-image: url(../images/foto3-bb.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: end;
+  align-content: end;
   display: flex;
   align-items: stretch;
   justify-content: space-around;
@@ -316,13 +317,11 @@ footer {
   flex-wrap: nowrap;
 }
 
-.formulario {
-  display: flex;
-  grid-area: form;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+.carrusel {
+  grid-area: cl;
+  width: 50;
+  justify-self: center;
+  align-self: center;
 }
 
 /* 

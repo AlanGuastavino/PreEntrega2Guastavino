@@ -1,4 +1,5 @@
 .header { 
+        grid-area: menu;
         position: fixed;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.826);
@@ -8,7 +9,7 @@
 }
 
 nav{
-        grid-area: menu;
+
         display: flex;
         justify-content: start;
         align-content: center;

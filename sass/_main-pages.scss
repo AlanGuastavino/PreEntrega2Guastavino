@@ -31,7 +31,7 @@
   grid-area: main3;
   height: 100vh;
   width: 100%;
- background-color: black;
+ background-color:$colorDeFondo;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,14 +45,16 @@
   grid-area: main4;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/foto2.jpg) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: end;
-  display: flex;
- align-items:stretch;
- justify-content: space-around;
- align-content: end;
+background-image: url(../images/foto3-bb.jpg);
+background-size: cover;
+background-position: center;
+    background-repeat: no-repeat;
+align-content: end;
+display: flex;
+align-items:stretch;
+justify-content: space-around;
+align-content: end;
+
 }
 
 .main5{

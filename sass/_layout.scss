@@ -5,11 +5,11 @@ body {
         display: grid;
        height: 100vh;
         grid-template-areas: 
-        "header header header header"
+        "menu menu menu menu"
         "main main main main"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-rows:auto auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
         align-content: stretch;
@@ -20,7 +20,7 @@ body {
         display: grid;
        height: 100vh;
         grid-template-areas: 
-        "header header header header"
+        "menu menu menu menu"
         "main2 main2 main2 main2"
         "pp pp pb pb"
         "pie pie pie pie";
@@ -36,7 +36,7 @@ body {
         display: grid;
        height: 100vh;
         grid-template-areas: 
-        "header header header header"
+        "menu menu menu menu"
         "main3 main3 main3 main3"
         "pie pie pie pie";
         row-gap: 0px;
@@ -51,11 +51,11 @@ body {
         display: grid;
        height: 100vh;
         grid-template-areas: 
-        "header header header header"
-        "main4 main4 main4 main4"
+        "menu menu menu menu"
+       "main4 main4 main4 main4"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-rows:90px auto auto auto auto ;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
         align-content: stretch;
@@ -66,12 +66,12 @@ body {
         display: grid;
        height: 100vh;
         grid-template-areas: 
-        "header header header header"
+        "menu menu menu menu"
         "main5 main5 main5 main5"
         "form form form form"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-rows:auto auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: space-around;
         align-content: stretch;
