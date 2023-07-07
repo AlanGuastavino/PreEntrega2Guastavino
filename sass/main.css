@@ -293,37 +293,6 @@ body {
   align-content: end;
 }
 
-@media (min-width: 374px) and (max-width: 668px) {
-  .logo1 {
-    width: 100px;
-  }
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  nav {
-    justify-content: center;
-    align-items: center;
-  }
-  .menu {
-    flex-direction: column;
-  }
-  .nav ul li a {
-    font-size: 0.6rem;
-  }
-  .titulo {
-    font-size: 0.5rem;
-  }
-  .titulo2 {
-    font-size: 0.5rem;
-  }
-}
-@media (min-width: 669px) and (max-width: 1024px) {
-  .nav ul li a {
-    font-size: 0.9rem;
-  }
-}
 footer {
   grid-area: pie;
 }
@@ -334,34 +303,29 @@ footer {
   height: 10%;
   align-self: end;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .titulo {
   display: flex;
-  width: 40%;
   font-size: 1.3rem;
-  font-family: "Biryani", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #f8f5f5;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5843137255);
-  text-align: center;
-  align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 .titulo2 {
   display: flex;
-  width: 40%;
   font-size: 1.3rem;
   color: #f8f5f5;
-  font-family: "Biryani", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5843137255);
-  text-align: center;
-  align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* info */
@@ -445,39 +409,38 @@ tbody td {
   border-bottom: 1px solid #ddd;
 }
 
-/* 
- $breakpoints: (
-    sm : 540px,
-    md : 768px,
-    lg : 1024px,
-    xl : 1280px,
- );
-
- @mixin media-up($breakpoint){
-    @if map-has-key($breakpoints , $breakpoint: ){
-        @media screen and (min-width: map-get($breakpoints, $breakpoint)){
-            @content;1024
-    }
-
- }@else{
-
- }
-
-    }
-
-@include media-up(sm){
-
+@media (min-width: 374px) and (max-width: 668px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo1 {
+    width: 50px;
+  }
+  .logo2 {
+    width: 70px;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .nav ul li a {
+    font-size: 0.6rem;
+  }
+  .titulo {
+    font-size: 1rem;
+    align-content: center;
+  }
+  .titulo2 {
+    font-size: 1rem;
+  }
 }
-@include media-up(md){
-
-}
-@include media-up(lg){
-
-}
-@include media-up(xl){
-
-}
-
-
-
- *//*# sourceMappingURL=main.css.map */
+@media (min-width: 669px) and (max-width: 1024px) {
+  .nav ul li a {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=main.css.map */
