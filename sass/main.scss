@@ -27,7 +27,7 @@ $colorTexto:#f8f5f5;
  @mixin media-up($breakpoint){
     @if map-has-key($breakpoints , $breakpoint: ){
         @media screen and (min-width: map-get($breakpoints, $breakpoint)){
-            @content;
+            @content;1024
     }
 
  }@else{
