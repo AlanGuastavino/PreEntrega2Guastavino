@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 nav {
@@ -199,9 +200,9 @@ body {
   height: 100vh;
   grid-template-areas: "menu menu menu menu" "main3 main3 main3 main3" "pie pie pie pie";
   row-gap: 0px;
-  grid-template-rows: 0px auto auto auto auto auto auto;
+  grid-template-rows: 85px auto auto auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
-  justify-content: stretch;
+  justify-content: center;
   align-content: stretch;
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -211,7 +212,7 @@ body {
   display: grid;
   height: 100vh;
   width: 100%;
-  grid-template-areas: "menu menu menu menu" "main4 main4 main4 main4" "boxg1 boxg1 boxg1 boxg1" "boxg2 boxg2 boxg2 boxg2" "pie pie pie pie";
+  grid-template-areas: "menu menu menu menu" "main4 main4 main4 main4" "pie pie pie pie";
   row-gap: 0px;
   grid-template-rows: 90px auto auto auto auto;
   grid-template-columns: repeat(4, 2fr);
@@ -267,14 +268,13 @@ body {
   grid-area: main3;
   height: 100vh;
   width: 100%;
-  background-color: #030303;
+  background-image: url(../images/fondo-negro-humo-foco.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  align-content: end;
+  align-items: center;
+  justify-content: center;
 }
 
 .main4 {
@@ -381,11 +381,37 @@ footer {
   flex-wrap: nowrap;
 }
 
-.carrusel {
-  grid-area: cl;
-  width: 50;
-  justify-self: center;
-  align-self: center;
+.box-estadisticas {
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  flex-wrap: wrap;
+  background-color: rgb(222, 218, 218);
+  width: 70%;
+  margin-top: 100px;
+}
+
+.tabla-estadisticas {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #6e0809;
+  color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
 }
 
 /* 

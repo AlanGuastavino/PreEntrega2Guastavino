@@ -9,7 +9,7 @@ body {
         "main main main main"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
         justify-content: stretch;
         align-content: stretch;
@@ -40,9 +40,9 @@ body {
         "main3 main3 main3 main3"
         "pie pie pie pie";
         row-gap: 0px;
-        grid-template-rows:0px auto auto auto auto auto auto;
+        grid-template-rows:85px auto auto auto auto auto auto;
         grid-template-columns: repeat(4, 2fr);
-        justify-content: stretch;
+        justify-content:center;
         align-content: stretch;
         column-gap: 20px;
     }
@@ -53,9 +53,7 @@ body {
        width: 100%;
         grid-template-areas: 
         "menu menu menu menu"
-  "main4 main4 main4 main4"
-        "boxg1 boxg1 boxg1 boxg1"
-       "boxg2 boxg2 boxg2 boxg2"
+        "main4 main4 main4 main4"
         "pie pie pie pie";
         row-gap: 0px;
         grid-template-rows:90px auto auto auto auto ;
@@ -80,3 +78,6 @@ body {
         align-content: stretch;
         column-gap: 20px;
     }
+    
+    
+    
